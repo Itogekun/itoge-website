@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>有限会社イトゲ興業 | 三重県津市の製造・業務請負</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script>
@@ -64,11 +61,9 @@
 </head>
 <body class="font-sans antialiased bg-white flex flex-col min-h-screen">
 
-    <!-- ナビゲーションバー (燦工業風のシンプルデザイン) -->
     <nav class="fixed w-full z-50 bg-white border-b border-gray-200" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <!-- ロゴ -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="#home" class="text-2xl font-black text-textmain tracking-wider flex items-center gap-2">
                         <span class="text-brand text-3xl">ITOGE</span>
@@ -76,7 +71,6 @@
                     </a>
                 </div>
                 
-                <!-- デスクトップメニュー -->
                 <div class="hidden md:flex space-x-8 items-center text-sm font-bold text-gray-600 tracking-wide">
                     <a href="#home" class="nav-link hover:text-brand transition">トップページ</a>
                     <a href="#company" class="nav-link hover:text-brand transition">会社情報</a>
@@ -85,7 +79,6 @@
                     <a href="#contact" class="nav-link hover:text-brand transition">お問い合わせ</a>
                 </div>
 
-                <!-- モバイルメニューボタン -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-button" class="text-gray-600 hover:text-brand focus:outline-none">
                         <i class="fa-solid fa-bars text-2xl"></i>
@@ -94,7 +87,6 @@
             </div>
         </div>
 
-        <!-- モバイルメニュー -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 shadow-lg">
             <div class="px-4 pt-2 pb-4 space-y-2">
                 <a href="#home" class="block px-3 py-3 text-base font-bold text-gray-700 hover:text-brand hover:bg-gray-50 border-b border-gray-100">トップページ</a>
@@ -106,14 +98,9 @@
         </div>
     </nav>
 
-    <!-- メインコンテンツ領域 (JSで中身を切り替えます) -->
     <main class="flex-grow pt-20">
 
-        <!-- ========================================== -->
-        <!-- [1] トップページ (view-home) -->
-        <!-- ========================================== -->
         <div id="view-home" class="page-view hidden">
-            <!-- ヒーロー画像 -->
             <div class="hero-bg h-[60vh] md:h-[70vh] flex items-center justify-center relative">
                 <div class="text-center px-4 z-10 w-full max-w-5xl bg-white/80 p-8 md:p-12 backdrop-blur-sm border border-white shadow-xl">
                     <h1 class="text-3xl md:text-5xl font-black text-textmain mb-4 tracking-tight">
@@ -125,7 +112,6 @@
                 </div>
             </div>
 
-            <!-- トップページ用の簡易案内 -->
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div class="grid md:grid-cols-3 gap-8">
                     <a href="#company" class="group block bg-white border border-gray-200 p-8 hover:shadow-xl transition-all duration-300 hover:border-brand relative overflow-hidden">
@@ -158,9 +144,6 @@
             </div>
         </div>
 
-        <!-- ========================================== -->
-        <!-- [2] 会社情報 (view-company) -->
-        <!-- ========================================== -->
         <div id="view-company" class="page-view hidden">
             <div class="page-header-bg py-16 border-b border-gray-200">
                 <div class="max-w-7xl mx-auto px-4 text-center">
@@ -170,7 +153,6 @@
             </div>
             
             <div class="max-w-4xl mx-auto px-4 py-16">
-                <!-- ご挨拶 -->
                 <div class="mb-20">
                     <h3 class="text-2xl font-bold mb-6 border-l-4 border-brand pl-4">ご挨拶</h3>
                     <div class="bg-bglight p-8 rounded-sm text-gray-700 leading-relaxed space-y-4">
@@ -181,7 +163,6 @@
                     </div>
                 </div>
 
-                <!-- 会社概要 -->
                 <div class="mb-20">
                     <h3 class="text-2xl font-bold mb-6 border-l-4 border-brand pl-4">会社概要</h3>
                     <table class="w-full text-left border-collapse">
@@ -199,8 +180,20 @@
                                 <td class="py-4 px-4">2006年4月</td>
                             </tr>
                             <tr class="border-b border-gray-200">
+                                <th class="py-4 px-4 bg-gray-50 text-gray-700 font-bold">資本金</th>
+                                <td class="py-4 px-4">3,300万円</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <th class="py-4 px-4 bg-gray-50 text-gray-700 font-bold">従業員数</th>
+                                <td class="py-4 px-4">43名</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
                                 <th class="py-4 px-4 bg-gray-50 text-gray-700 font-bold">事業内容</th>
                                 <td class="py-4 px-4">業務請負業（製造業・組立作業など）</td>
+                            </tr>
+                            <tr class="border-b border-gray-200">
+                                <th class="py-4 px-4 bg-gray-50 text-gray-700 font-bold">労働者派遣事業許可番号</th>
+                                <td class="py-4 px-4">派24-300420</td>
                             </tr>
                             <tr class="border-b border-gray-200">
                                 <th class="py-4 px-4 bg-gray-50 text-gray-700 font-bold">所在地</th>
@@ -210,7 +203,6 @@
                     </table>
                 </div>
 
-                <!-- アクセス -->
                 <div>
                     <h3 class="text-2xl font-bold mb-6 border-l-4 border-brand pl-4">アクセス</h3>
                     <div class="h-96 bg-gray-200 w-full border border-gray-300">
@@ -223,9 +215,6 @@
             </div>
         </div>
 
-        <!-- ========================================== -->
-        <!-- [3] 事業内容 (view-services) -->
-        <!-- ========================================== -->
         <div id="view-services" class="page-view hidden">
             <div class="page-header-bg py-16 border-b border-gray-200">
                 <div class="max-w-7xl mx-auto px-4 text-center">
@@ -238,10 +227,9 @@
                 <p class="text-center text-gray-600 mb-12">お客様のニーズに合わせた最適なソリューションをご提供します。</p>
 
                 <div class="space-y-16">
-                    <!-- サービス1 -->
                     <div class="flex flex-col md:flex-row gap-8 items-center bg-white p-6 border border-gray-100 shadow-sm">
                         <div class="md:w-1/2">
-                            <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="製造・組立請負" class="w-full h-auto object-cover border border-gray-200">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="工場での作業風景" class="w-full h-auto object-cover border border-gray-200">
                         </div>
                         <div class="md:w-1/2">
                             <div class="inline-block bg-brand text-white text-xs font-bold px-3 py-1 mb-3">メイン事業</div>
@@ -257,10 +245,9 @@
                         </div>
                     </div>
 
-                    <!-- サービス2 -->
                     <div class="flex flex-col md:flex-row-reverse gap-8 items-center bg-white p-6 border border-gray-100 shadow-sm">
                         <div class="md:w-1/2">
-                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="構内請負" class="w-full h-auto object-cover border border-gray-200">
+                            <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=80" alt="精密部品の検査・組み立て" class="w-full h-auto object-cover border border-gray-200">
                         </div>
                         <div class="md:w-1/2">
                             <h3 class="text-2xl font-bold mb-4">構内請負・現場サポート</h3>
@@ -278,9 +265,6 @@
             </div>
         </div>
 
-        <!-- ========================================== -->
-        <!-- [4] 求職者の方へ (view-recruit) -->
-        <!-- ========================================== -->
         <div id="view-recruit" class="page-view hidden">
             <div class="page-header-bg py-16 border-b border-gray-200">
                 <div class="max-w-7xl mx-auto px-4 text-center">
@@ -323,7 +307,6 @@
                         </ul>
                     </div>
 
-                    <!-- ハローワーク案内枠 -->
                     <div class="border border-brand bg-orange-50 p-6 text-center">
                         <i class="fa-solid fa-magnifying-glass text-brand text-3xl mb-3"></i>
                         <h4 class="font-bold text-lg mb-2">詳細な募集条件について</h4>
@@ -344,9 +327,6 @@
             </div>
         </div>
 
-        <!-- ========================================== -->
-        <!-- [5] お問い合わせ (view-contact) -->
-        <!-- ========================================== -->
         <div id="view-contact" class="page-view hidden">
             <div class="page-header-bg py-16 border-b border-gray-200">
                 <div class="max-w-7xl mx-auto px-4 text-center">
@@ -411,11 +391,9 @@
 
     </main>
 
-    <!-- フッター -->
     <footer class="bg-textmain text-white py-12 mt-auto">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
-                <!-- ロゴ・情報 -->
                 <div class="text-center md:text-left">
                     <h3 class="text-2xl font-black mb-4 tracking-wider flex items-center justify-center md:justify-start gap-2">
                         <span class="text-brand">ITOGE</span>
@@ -425,7 +403,6 @@
                     <p class="text-gray-400 text-sm">代表取締役 糸毛 照幸</p>
                 </div>
                 
-                <!-- リンク集 -->
                 <div class="flex gap-6 text-sm font-bold text-gray-300">
                     <a href="#home" class="hover:text-brand transition">トップ</a>
                     <a href="#company" class="hover:text-brand transition">会社情報</a>
@@ -435,12 +412,11 @@
             </div>
             
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-xs text-gray-500">
-                <p>&copy; 2024 有限会社イトゲ興業 All Rights Reserved.</p>
+                <p>© 2024 有限会社イトゲ興業 All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- ページ切り替え用スクリプト -->
     <script>
         // ハッシュに基づくページ表示の切り替え処理 (SPA風ルーティング)
         function handleRoute() {
